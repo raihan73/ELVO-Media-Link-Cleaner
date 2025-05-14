@@ -1,0 +1,88 @@
+/* Main Styles */
+#elvo-cleaner-tabs {
+    margin-top: 20px;
+}
+
+.elvo-tab-content {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    border-top: none;
+    margin-top: -1px;
+}
+
+/* Media Results Table */
+.elvo-media-results img {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 2px;
+    background: #fff;
+}
+
+.elvo-media-results .tablenav {
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+/* Link Results Table */
+.elvo-link-results a {
+    text-decoration: none;
+}
+
+.elvo-link-results a:hover {
+    text-decoration: underline;
+}
+
+/* Notices */
+.notice {
+    margin: 5px 0 15px 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .elvo-media-results th, 
+    .elvo-link-results th {
+        display: none;
+    }
+    
+    .elvo-media-results td,
+    .elvo-link-results td {
+        display: block;
+        width: 100% !important;
+    }
+    
+    .elvo-media-results td:before {
+        content: attr(data-colname);
+        font-weight: bold;
+        display: inline-block;
+        width: 100px;
+    }
+    
+    .elvo-media-results img {
+        max-width: 100%;
+    }
+}
+
+/* Buttons */
+.button.button-primary {
+    margin-right: 5px;
+}
+
+.button.button-danger {
+    background: #dc3232;
+    border-color: #dc3232;
+    color: white;
+}
+
+.button.button-danger:hover {
+    background: #a00;
+    border-color: #a00;
+    color: white;
+}
+
+/* Loading State */
+.elvo-loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
